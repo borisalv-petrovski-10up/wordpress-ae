@@ -3,10 +3,10 @@
 ## Prerequisites:
  1. Installed PHP 7.2+
  2. GCP project with enabled billing
- 3. Installed Cloud SDK - https://cloud.google.com/sdk 
- 4. Enabled Cloud SQL API - https://console.cloud.google.com/flows/enableapi?apiid=sqladmin&_ga=2.148049013.37051970.1620957592-1933320711.1616784360 
- 5. Installed Composer for managing dependencies - https://getcomposer.org/download/ 
-
+ 3. Installed Cloud SDK - https://cloud.google.com/sdk
+ 4. Enabled Cloud SQL API - https://console.cloud.google.com/flows/enableapi?apiid=sqladmin&_ga=2.148049013.37051970.1620957592-1933320711.1616784360
+ 5. Enabled Cloud Scheduler - https://console.cloud.google.com/cloudscheduler
+ 6. Installed Composer for managing dependencies - https://getcomposer.org/download/
 
 ## Configuration of Cloud SQL to use MySQL instance:
  1. First step would be to create MySQL instance: <br> 
