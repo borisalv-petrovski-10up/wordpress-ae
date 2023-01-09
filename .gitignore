@@ -8,5 +8,6 @@
 !.gitignore
 !app.yaml
 !cron.yaml
+!gae-app.php
 !README.md
 !Makefile
