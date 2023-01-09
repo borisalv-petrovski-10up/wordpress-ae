@@ -1,0 +1,12 @@
+# Ingore everthing
+*
+
+# Ignore everything except the following
+!assets
+!wp-content
+!.gcloudignore
+!.gitignore
+!app.yaml
+!cron.yaml
+!README.md
+!Makefile
