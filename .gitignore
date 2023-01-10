@@ -2,12 +2,17 @@
 *
 
 # Ignore everything except the following
-!assets
-!wp-content
+!/assets
+!/assets/**/*
+!/deployment-provisioning
+!/deployment-provisioning/**/*
+!/wp-content
+!/wp-content/**/*
 !.gcloudignore
 !.gitignore
 !app.yaml
 !cron.yaml
 !gae-app.php
-!README.md
 !Makefile
+!php.ini
+!README.md

@@ -1,0 +1,16 @@
+imports:
+  - path: setup.jinja
+resources:
+  - name: setup
+    type: setup.jinja
+    properties:
+      project: sk-borislav
+      instance:
+        name: ae-wordpress
+      database:
+        name: ae-wordpress
+      dbUser:
+        user: root
+        password: f$BsUk@uZunP9GDq
+      bucket:
+        name: ae-wordpress

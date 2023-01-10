@@ -1,0 +1,31 @@
+resources:
+  - name: my-sql-instance
+    type: sqladmin.v1beta4.instance
+    properties:
+      project: {{ properties['project'] }}
+      databaseVersion: MYSQL_8_0
+      name: {{ properties['instance']['name'] }}
+      region: us-central1
+      settings:
+        activationPolicy: ALWAYS
+        tier: db-n1-standard-1
+  - name: my-sql-db
+    type: sqladmin.v1beta4.database
+    properties:
+      instance: $(ref.my-sql-instance.name)
+      name: {{ properties['database']['name'] }}
+  - name: my-sql-user
+    type: sqladmin.v1beta4.user
+    properties:
+      instance: $(ref.my-sql-instance.name)
+      name: {{ properties['dbUser']['user'] }}
+      host: '%'
+      password: {{ properties['dbUser']['password'] }}
+      metadata:
+        dependsOn:
+          - my-sql-db
+  - type: storage.v1.bucket
+    name: ae-wordpress
+    properties:
+      project: {{ properties['project'] }}
+      name: {{ properties['bucket']['name'] }}
