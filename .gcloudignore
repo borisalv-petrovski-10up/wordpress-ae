@@ -17,4 +17,6 @@
 /vendor/
 
 assets
+deployment-provisioning
+Makefile
 README.md
